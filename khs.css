@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: hsl(220, 14%, 78%);
+}
+
+header img { 
+    float: right;
+    position: relative;
+    right: 2%;
+    width: 3%;
+    height: 3%;
+  }
+
+header {
+  background-color: #184c77;
+  color: #fff;
+  padding: 1%;
+  text-align: center;
+  font-size: 200%;
+}
+
+.navbar-header h1 {
+  margin: 0;
+  padding: 0%;
+  color: white;
+  background-color: #184c77;
+  font-weight: lighter;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+  background-color: #363434;
+  padding: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 60px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  margin-left: 5px;
+}
+
+nav ul li:hover a::after {
+  border-top-color: #636060;
+}
+
+.dropdown-menu a {
+  position: relative;
+}
+
+.dropdown-menu a::after {
+  content: "";
+  display: none; 
+}
+
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu li:hover a::after {
+  border-top-color: #fff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #363434;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+.dropdown-menu :hover {
+  background-color: #5f5b5b;
+}
+
+.dropdown-menu a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a {
+  transition: background-color 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.container {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border: 5px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.Periodee {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 5%;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.Periodee:hover {
+background-color: #dadada;
+}
+
+.Periodee p {
+  padding: 0%;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  left: -34%;
+}
+
+select {
+  position: relative;
+  left: 1%;
+  }
+
+.KHS {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  text-align: center;
+  }
+  
+  .KHS h2 {
+   margin-bottom: 1px;
+   padding: 1%;
+   font-size: 130%;
+   background-color: #080808;
+   color: #ffffff;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table th, table td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  }
+
+  table th {
+  background-color: #f2f2f2;
+  }
+
+  table tr {
+  transition: background-color 0.2s ease;
+  }
+
+  table tr:hover {
+  background-color: #f5d16d;
+  }
+
+  .KHS td[colspan="8"] {
+  text-align: center;
+  font-weight: bold;
+  }
+  
+  .KHS img {
+  width: 5%;
+  height: 5%;
+  float: right;
+  border: #080808;
+  }
+
+  h3 {
+  margin-top: 3%;
+  text-align: left;
+  }
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selamat datang di sistem informasi akademik</title>
+  <link rel="icon" href="foto/logo contoh.jpg" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="foto/gambar siakad.jpg" alt="siakad">
+    <h1>Login</h1>
+    <form id="login-form">
+      <input type="text" placeholder="Masukan Nim" id="username" required>
+      <div class="password-container">
+        <input type="password" placeholder="Password" id="password" required>
+        <span class="toggle-password" onclick="togglePasswordVisibility()">&#128065;</span>
+      </div>
+      <button type="submit" onclick="login()">Login</button>
+    </form>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
